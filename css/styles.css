@@ -75,6 +75,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .header-contacts-item {
@@ -163,9 +164,9 @@ img {
   margin-bottom: 0;
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 .nav-link.tel {
   color: var(--color-text);
@@ -190,6 +191,7 @@ li {
   margin: 0;
   padding: 0;
   margin-top: 20px;
+  list-style-type: none;
 }
 
 .nav-link.current {
@@ -248,7 +250,8 @@ li {
   border-radius: 4px;
 }
 
-.button-hero:hover {
+.button-hero:hover,
+.button-hero:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -260,6 +263,7 @@ li {
   gap: 30px;
   margin: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .section-title {
@@ -303,6 +307,7 @@ li {
   justify-content: center;
   padding-left: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .caption-element:nth-child(-n + 2) {
@@ -368,6 +373,7 @@ li {
   font-style: normal;
   color: var(--color-text);
   text-decoration: none;
+  list-style-type: none;
 }
 
 .text-decor:first-child {
@@ -397,6 +403,7 @@ li {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
+  list-style-type: none;
 }
 
 .address:hover,
@@ -429,15 +436,6 @@ li {
   border-radius: 4px;
 }
 
-.alink {
-  text-decoration: none;
-}
-
-.boxes-img:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -446,6 +444,7 @@ li {
   margin-top: -30px;
   padding: 0;
   margin-bottom: 0;
+  list-style-type: none;
 }
 
 .boxes-element {
@@ -455,6 +454,22 @@ li {
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
+}
+
+.boxes-element:hover,
+.boxes-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.alink {
+  text-decoration: none;
+}
+
+.alink:focus,
+.alink:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .produkts {
@@ -489,6 +504,7 @@ li {
   margin: 0;
   padding-left: 0;
   margin-bottom: 50px;
+  list-style-type: none;
 }
 
 .button-link-item {
@@ -515,7 +531,8 @@ li {
   margin-right: 10px;
 }
 
-.nav-link.mail:hover .mail-icon {
+.nav-link.mail:hover .mail-icon,
+.nav-link.mail:focus .mail-icon {
   fill: var(--color-accent);
 }
 
@@ -524,7 +541,8 @@ li {
   margin-right: 10px;
 }
 
-.nav-link.tel:hover .phone-icon {
+.nav-link.tel:hover .phone-icon,
+.nav-link.tel:focus .phone-icon {
   fill: var(--color-accent);
 }
 
@@ -533,10 +551,15 @@ li {
   align-items: center;
   justify-content: center;
   background-color: var(--color-background-third);
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.net-item {
+  width: calc(100% / 4 - 10px / 4 * 3);
+  height: 44px;
 }
 
 .net-list {
@@ -545,22 +568,25 @@ li {
   gap: 10px;
   padding: 0;
   margin-top: 16px;
+  list-style-type: none;
 }
 
 .net-link {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
 
-.net-link:hover {
+.net-link:hover,
+.net-link:focus {
   background-color: var(--color-accent);
 }
 
-.net-link:hover .net-icon {
+.net-link:hover .net-icon,
+.net-link:focus .net-icon {
   fill: var(--color-white);
 }
 
@@ -575,14 +601,20 @@ li {
   gap: 30px;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+}
+
+.clients-item {
+  width: calc(100% / 6 - 30px / 6 * 5);
+  height: 92px;
 }
 
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
 }
@@ -591,11 +623,13 @@ li {
   fill: var(--color-icons);
 }
 
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--color-accent);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--color-accent);
 }
 
@@ -620,6 +654,11 @@ li {
   margin: 0;
 }
 
+/* .socials-item{
+  width: calc(100%/ 4 - 10px/4*3);
+  height: 44px;
+} */
+
 .socials-link {
   width: 44px;
   height: 44px;
@@ -636,12 +675,14 @@ li {
   gap: 10px;
   padding: 0;
   margin: 20px 0 0 0;
+  list-style-type: none;
 }
 
 .net-icon-footer {
   fill: var(--color-white);
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--color-accent);
 }
