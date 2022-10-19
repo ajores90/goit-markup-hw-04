@@ -45,11 +45,6 @@ body {
   margin: -1px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -163,10 +158,6 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* li {
-  list-style-type: none;
-} */
 
 .nav-link.tel {
   color: var(--color-text);
@@ -309,6 +300,16 @@ img {
   margin: 0;
   list-style-type: none;
 }
+.caption-element {
+  width: calc(100% / 3 - 30px / 3 * 2);
+  height: 294px;
+}
+
+.caption-element > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .caption-element:nth-child(-n + 2) {
   margin-right: 30px;
@@ -345,13 +346,20 @@ img {
   padding-left: 0;
   margin: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
-.team-box-img {
+.team-element {
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: calc(100% / 4 - 30px / 4 * 3);
+  height: 428px;
+}
+
+.team-element > img {
+  display: block;
 }
 
 .team-element:nth-child(-n + 3) {
@@ -412,6 +420,7 @@ img {
 }
 
 .button-link {
+  display: block;
   background: var(--color-background-third);
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
@@ -454,15 +463,12 @@ img {
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
-}
-
-.boxes-element:hover,
-.boxes-element:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  width: calc(100% / 9 - 30px / 9 * 6);
+  height: 404px;
 }
 
 .alink {
+  display: block;
   text-decoration: none;
 }
 
@@ -544,6 +550,10 @@ img {
 .nav-link.tel:hover .phone-icon,
 .nav-link.tel:focus .phone-icon {
   fill: var(--color-accent);
+}
+
+.capacity-item {
+  width: calc(100% / 4 - 10px / 4 * 3);
 }
 
 .capacity-icons {
@@ -653,11 +663,6 @@ img {
   text-transform: uppercase;
   margin: 0;
 }
-
-/* .socials-item{
-  width: calc(100%/ 4 - 10px/4*3);
-  height: 44px;
-} */
 
 .socials-link {
   width: 44px;
